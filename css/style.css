@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+  body {
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+  }
+header p{
+    background-color:#D1891C;
+    padding: 4px 0 4px 28px;
+    font-size: 15px;
+}
+header h1{
+    background-color: #00669F;
+    padding: 6px 0 6px 28px;
+    font-size: 20px;
+    color:#FFFFFF;
+    font-weight: normal;
+    
+}
+/*------------------ main---------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    position: relative;
+}
+main article{
+    width: 50%;
+    margin-top: 25px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center; 
+    background-color: #F3F3F3;
+    border: solid 1px white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main article img.fondo{
+    width:100%;
+    border: 1px none rgba(0,0,0,0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main article img.perfil{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 86px;
+    border: 1px none rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+main article .fa-solid{
+    color: red;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+main article div{
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+main article div h2{
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+main article div p.descripcion{
+    font-size:12px;
+    padding: 4px;
+}
+main article div p.ver_mas{
+ background-color: #00669F;
+ padding: 10px 29px;
+ margin: 15px;
+ font-size:12px;
+} 
+
+main article div p a{
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #00669F;
+    padding: 10px
+}
+footer p {
+    color: white;
+    font-size: 12px;
+}
+footer a{
+    position: absolute;
+    right: 10px;
+}
+
+footer a img{
+    width: 73px;
+
+}
+@media(min-width:460px){
+
+}
+
+@media(min-width:768px){
+    
+}
