@@ -7,6 +7,8 @@
     width: 100%;
     font-family: 'Roboto';
     font-style: normal;
+    position: relative;
+    height: 100vh;
   }
 header p{
     background-color:#D1891C;
@@ -89,12 +91,27 @@ main article div p a{
     color: #F3F3F3;
 }
 
+main a.circle{
+    display: flex;
+    text-decoration: none;
+    background-color: #00669F;
+    border: 1px solid #00669F;
+    border-radius:50%;
+    padding:20px;
+    position: absolute;
+    right: 27px;
+    top: 409px;
+}
+main a.circle i{
+    color: #FFFFFF;
+}
 footer{
     display:flex;
     justify-content:center;
     align-items:center;
     background-color: #00669F;
-    padding: 10px
+    padding: 10px;
+    margin-top: 50px;
 }
 footer p {
     color: white;
@@ -109,10 +126,88 @@ footer a img{
     width: 73px;
 
 }
-@media(min-width:460px){
-
+@media(min-width:485px){
+    main{
+      flex-direction: row; 
+      flex-wrap: wrap; 
+      justify-content: center;
+    }
+    main article{
+        width: 40%;
+        margin-right: 20px;
+        }
+    main article#top1{
+         margin-right: 27px;
+         margin-bottom: 27px;
+        }
+    main article#top2{
+        margin-left: 27px;
+        margin-bottom: 27px;
+        }
+    main article#bottom1{
+        margin-right: 27px;
+    }
+    main article#bottom2{
+        margin-left: 27px;
+    }
+    main article img.perfil{
+        top:77px
+    }
+    main article div p.descripcion{
+    min-height:110px;  
+    }
+    
+    main a.circle{
+        top: 474px;
+        right: 10px;
+    }
+    footer{
+        margin-top:60px;
+    }
+    
 }
 
-@media(min-width:768px){
-    
+
+@media(min-width:760px){
+    main article{
+       max-width: 28%; 
+       min-height: 212px;
+    }
+    main article#top1{
+        margin-right: 12px;
+       
+       }
+   main article#top2{
+       margin-left: 12px;
+       }
+   main article#bottom1{
+       /* margin-right: 12px; */
+       margin-top: 0px;
+   }
+   main article#bottom2{
+       margin-left: 12px;
+   }
+   main a.circle{
+    top: 462px;  
+    }
+}
+
+@media(min-width:1000px){
+    main article{
+        max-width: 308px;
+    }
+    main article img.perfil{
+        top:125px
+    }
+    main article div p.descripcion{
+        padding: 10px;
+    }
+    main a.circle{
+        top: 500px;  
+        }
+    footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+    }
 }
